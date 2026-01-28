@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-label="Animated drone flight">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-label="Animated quadcopter takeoff">
   <defs>
     <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.1"/>
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.08"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -13,25 +13,48 @@
     </filter>
   </defs>
   <rect width="720" height="180" fill="url(#sky)"/>
-  <path d="M40 140 C 160 90, 300 120, 440 80 S 640 70, 680 40" fill="none" stroke="#0f172a" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="6 8"/>
-  <g filter="url(#glow)">
-    <g id="drone">
-      <circle cx="18" cy="18" r="18" fill="#0f172a"/>
-      <rect x="6" y="14" width="24" height="8" rx="4" fill="#38bdf8"/>
-      <circle cx="0" cy="18" r="6" fill="#0f172a"/>
-      <circle cx="36" cy="18" r="6" fill="#0f172a"/>
-      <circle cx="18" cy="0" r="6" fill="#0f172a"/>
-      <circle cx="18" cy="36" r="6" fill="#0f172a"/>
-    </g>
+  <text x="24" y="28" fill="#0f172a" font-family="Space Grotesk, sans-serif" font-size="14">Quadcopter takeoff</text>
+
+  <g transform="translate(0 0)">
+    <ellipse cx="360" cy="150" rx="90" ry="12" fill="#0f172a" opacity="0.12">
+      <animate attributeName="rx" values="90;72;90" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.06;0.12" dur="2.6s" repeatCount="indefinite"/>
+    </ellipse>
   </g>
-  <use href="#drone" x="40" y="40">
-    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#flightPath"/>
-    </animateMotion>
-  </use>
-  <path id="flightPath" d="M40 140 C 160 90, 300 120, 440 80 S 640 70, 680 40" fill="none"/>
-  <circle cx="620" cy="28" r="6" fill="#22d3ee" opacity="0.8">
-    <animate attributeName="r" values="5;9;5" dur="2.4s" repeatCount="indefinite"/>
-  </circle>
-  <text x="24" y="24" fill="#0f172a" font-family="Space Grotesk, sans-serif" font-size="14">Autonomy Flight Loop</text>
+
+  <g id="quadcopter" filter="url(#shadow)">
+    <rect x="320" y="76" width="80" height="28" rx="8" fill="#0f172a"/>
+    <rect x="350" y="84" width="20" height="12" rx="6" fill="#38bdf8"/>
+    <rect x="280" y="88" width="40" height="4" rx="2" fill="#0f172a"/>
+    <rect x="400" y="88" width="40" height="4" rx="2" fill="#0f172a"/>
+    <rect x="340" y="52" width="4" height="24" fill="#0f172a"/>
+    <rect x="376" y="52" width="4" height="24" fill="#0f172a"/>
+    <rect x="300" y="68" width="12" height="12" rx="6" fill="#0f172a"/>
+    <rect x="408" y="68" width="12" height="12" rx="6" fill="#0f172a"/>
+    <g transform="translate(288 50)">
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(408 50)">
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(318 36)">
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(378 36)">
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
+      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -18; 0 0" dur="2.6s" repeatCount="indefinite"/>
+  </g>
 </svg>
