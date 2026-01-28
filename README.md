@@ -1,16 +1,35 @@
-## Hi there 👋
+# Mainak Mondal
 
-<!--
-**CrashxZ/CrashxZ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Robotics, autonomy, and networked systems. Building full-stack robotic products from simulation to deployment.
 
-Here are some ideas to get you started:
+[crashxz.me](https://crashxz.me)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="left">
+  <img src="assets/drone-flight.svg" alt="Animated drone flight" width="360" />
+  <img src="assets/tech-orbit.svg" alt="Animated tech orbit" width="360" />
+</p>
+
+## Systems That Ship
+
+- **MINDCAV AutoLLM Dashboard** — CARLA AI-in-the-loop control plane with FastAPI + React, WebRTC telemetry, and dataset capture.  
+  https://github.com/CrashxZ/AutoLLM
+- **5G RAN Dashboard (srsRAN + OAI)** — unified telemetry schema, realtime UE views, and Vercel-hosted ingest API.  
+  https://github.com/CrashxZ/UniDash5g
+- **Gym Reps Tracker** — Vite + React workout planner with Chart.js progress tracking.  
+  https://github.com/CrashxZ/GymTrack
+- **DJI IR + AprilTag Tracking** — ROS-based follow/landing workflows for DJI A3/N3.  
+  https://github.com/CrashxZ/DJIFollowMe
+- **Tello Coordinate System Helper** — ENU/NED helpers for DJI Tello commands.  
+  https://github.com/CrashxZ/TelloCoordinateSystem
+
+## Focus Areas
+
+- Autonomous robotics (UAV/UGV)
+- CARLA + ROS orchestration
+- V2X / 5G telemetry pipelines
+- Perception-driven control loops
+
+## Contact
+
+- Website: https://crashxz.me
+- LinkedIn: https://www.linkedin.com/in/mainakm/
