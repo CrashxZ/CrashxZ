@@ -4,9 +4,8 @@ Robotics, autonomy, and networked systems. Building full-stack robotic products 
 
 [crashxz.me](https://crashxz.me)
 
-<p align="left">
-  <img src="assets/drone-flight.svg" alt="Animated drone flight" width="360" />
-  <img src="assets/tech-orbit.svg" alt="Animated tech orbit" width="360" />
+<p align="center">
+  <img src="assets/drone-flight.svg" alt="Animated drone and controller" width="680" />
 </p>
 
 ## Systems That Ship

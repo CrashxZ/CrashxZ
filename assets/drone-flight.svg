@@ -1,103 +1,88 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-label="Animated X-quad takeoff">
-=======
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-label="Animated quadcopter takeoff">
->>>>>>> origin/main
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-label="Animated X-quad takeoff with controller">
   <defs>
-    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.08"/>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="controllerBody" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
     <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
-  <rect width="720" height="180" fill="url(#sky)"/>
-<<<<<<< HEAD
-  <text x="24" y="28" fill="#0f172a" font-family="Space Grotesk, sans-serif" font-size="14">X-quad takeoff</text>
-=======
-  <text x="24" y="28" fill="#0f172a" font-family="Space Grotesk, sans-serif" font-size="14">Quadcopter takeoff</text>
->>>>>>> origin/main
 
-  <g transform="translate(0 0)">
-    <ellipse cx="360" cy="150" rx="90" ry="12" fill="#0f172a" opacity="0.12">
-      <animate attributeName="rx" values="90;72;90" dur="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.12;0.06;0.12" dur="2.6s" repeatCount="indefinite"/>
-    </ellipse>
+  <text x="24" y="32" fill="#e2e8f0" font-family="Space Grotesk, sans-serif" font-size="14">X-quad takeoff</text>
+
+  <ellipse cx="200" cy="190" rx="110" ry="14" fill="#94a3b8" opacity="0.18">
+    <animate attributeName="rx" values="110;90;110" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.18;0.08;0.18" dur="2.6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g id="xquad" filter="url(#shadow)">
+    <animateTransform attributeName="transform" type="translate" values="200 120; 200 92; 200 120" dur="2.6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" additive="sum" values="0;1.5;0" dur="2.6s" repeatCount="indefinite"/>
+
+    <line x1="-60" y1="-60" x2="60" y2="60" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round"/>
+    <line x1="-60" y1="60" x2="60" y2="-60" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round"/>
+
+    <rect x="-30" y="-14" width="60" height="28" rx="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="-14" y="-6" width="28" height="12" rx="6" fill="url(#accent)"/>
+    <rect x="-6" y="12" width="12" height="20" rx="4" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+
+    <line x1="-12" y1="30" x2="-34" y2="54" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="12" y1="30" x2="34" y2="54" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="-60" cy="-60" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="60" cy="-60" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="-60" cy="60" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(-68 -68)">
+      <ellipse cx="0" cy="0" rx="26" ry="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="28" ry="10" fill="#22d3ee" opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.55s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(68 -68)">
+      <ellipse cx="0" cy="0" rx="26" ry="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="28" ry="10" fill="#22d3ee" opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.55s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(-68 68)">
+      <ellipse cx="0" cy="0" rx="26" ry="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="28" ry="10" fill="#22d3ee" opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.55s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+    <g transform="translate(68 68)">
+      <ellipse cx="0" cy="0" rx="26" ry="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="28" ry="10" fill="#22d3ee" opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.55s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
   </g>
 
-<<<<<<< HEAD
-  <g id="xquad" filter="url(#shadow)" transform="translate(360 90)">
-    <g>
-      <line x1="-36" y1="-36" x2="36" y2="36" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
-      <line x1="-36" y1="36" x2="36" y2="-36" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
-      <circle r="18" fill="#0f172a"/>
-      <circle r="8" fill="#38bdf8"/>
-    </g>
-    <g transform="translate(-40 -40)">
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.7s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(40 -40)">
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.7s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(-40 40)">
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.7s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(40 40)">
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="0" cy="0" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="0.7s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <animateTransform attributeName="transform" type="translate" values="360 90; 360 70; 360 90" dur="2.6s" repeatCount="indefinite"/>
-=======
-  <g id="quadcopter" filter="url(#shadow)">
-    <rect x="320" y="76" width="80" height="28" rx="8" fill="#0f172a"/>
-    <rect x="350" y="84" width="20" height="12" rx="6" fill="#38bdf8"/>
-    <rect x="280" y="88" width="40" height="4" rx="2" fill="#0f172a"/>
-    <rect x="400" y="88" width="40" height="4" rx="2" fill="#0f172a"/>
-    <rect x="340" y="52" width="4" height="24" fill="#0f172a"/>
-    <rect x="376" y="52" width="4" height="24" fill="#0f172a"/>
-    <rect x="300" y="68" width="12" height="12" rx="6" fill="#0f172a"/>
-    <rect x="408" y="68" width="12" height="12" rx="6" fill="#0f172a"/>
-    <g transform="translate(288 50)">
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(408 50)">
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(318 36)">
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <g transform="translate(378 36)">
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#0f172a"/>
-      <ellipse cx="18" cy="12" rx="18" ry="6" fill="#22d3ee" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 12" to="360 18 12" dur="0.8s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -18; 0 0" dur="2.6s" repeatCount="indefinite"/>
->>>>>>> origin/main
+  <g transform="translate(470 70)" filter="url(#shadow)">
+    <path d="M20 16 Q 20 0 36 0 L 164 0 Q 180 0 180 16 L 196 42 Q 200 50 200 64 L 200 88 Q 200 110 176 116 L 150 120 Q 120 128 100 128 Q 80 128 50 120 L 24 116 Q 0 110 0 88 L 0 64 Q 0 50 4 42 Z" fill="url(#controllerBody)" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="24" y="24" width="62" height="36" rx="10" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="114" y="24" width="62" height="36" rx="10" fill="#111827" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="55" cy="42" r="8" fill="#38bdf8"/>
+    <circle cx="145" cy="42" r="8" fill="#22d3ee"/>
+    <rect x="80" y="68" width="40" height="26" rx="6" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="88" y="76" width="24" height="8" rx="4" fill="url(#accent)"/>
+    <circle cx="70" cy="86" r="10" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="130" cy="86" r="10" fill="#0f172a" stroke="#e2e8f0" stroke-width="2"/>
+    <line x1="48" y1="-12" x2="48" y2="20" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="152" y1="-12" x2="152" y2="20" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="48" cy="-12" r="6" fill="#e2e8f0"/>
+    <circle cx="152" cy="-12" r="6" fill="#e2e8f0"/>
+    <animateTransform attributeName="transform" type="translate" values="470 70; 470 66; 470 70" dur="3s" repeatCount="indefinite"/>
   </g>
 </svg>
