@@ -2,7 +2,6 @@
 
 Robotics, autonomy, and networked systems. Building full-stack robotic products from simulation to deployment.
 
-[crashxz.me](https://crashxz.me)
 
 <p align="center">
   <img src="assets/drone-flight.svg" alt="Animated drone and controller" width="680" />
