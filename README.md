@@ -9,16 +9,16 @@ Robotics, autonomy, and networked systems. Building full-stack robotic products 
 
 ## Systems That Ship
 
-- **MINDCAV AutoLLM Dashboard** — CARLA AI-in-the-loop control plane with FastAPI + React, WebRTC telemetry, and dataset capture.  
-  https://github.com/CrashxZ/AutoLLM
-- **5G RAN Dashboard (srsRAN + OAI)** — unified telemetry schema, realtime UE views, and Vercel-hosted ingest API.  
-  https://github.com/CrashxZ/UniDash5g
-- **Gym Reps Tracker** — Vite + React workout planner with Chart.js progress tracking.  
-  https://github.com/CrashxZ/GymTrack
-- **DJI IR + AprilTag Tracking** — ROS-based follow/landing workflows for DJI A3/N3.  
-  https://github.com/CrashxZ/DJIFollowMe
-- **Tello Coordinate System Helper** — ENU/NED helpers for DJI Tello commands.  
-  https://github.com/CrashxZ/TelloCoordinateSystem
+- **[MINDCAV AutoLLM Dashboard](https://github.com/CrashxZ/AutoLLM)** — CARLA AI-in-the-loop control plane with FastAPI + React, WebRTC telemetry, and dataset capture.  
+  
+- **[5G RAN Dashboard (srsRAN + OAI)](https://github.com/CrashxZ/UniDash5g)** — Unified 5G RAN telemetry dashboard with real-time UE views, shared schema, and a Vercel-hosted ingest API.  
+
+- **[Gym Reps Tracker](https://github.com/CrashxZ/GymTrack)** — Vite + React workout planner with Chart.js–based progress tracking and session analytics.  
+
+- **[DJI IR + AprilTag Tracking](https://github.com/CrashxZ/DJIFollowMe)** — ROS-based infrared and AprilTag tracking pipelines for autonomous follow and landing on DJI A3/N3 platforms.  
+
+- **[Tello Coordinate System Helper](https://github.com/CrashxZ/TelloCoordinateSystem)** — Lightweight ENU/NED coordinate conversion utilities for precise DJI Tello flight control commands.  
+
 
 ## Focus Areas
 
