@@ -9,7 +9,7 @@ Robotics, autonomy, and networked systems. Building full-stack robotic products 
 
 ## Systems That Ship
 
-- **[MINDCAV AutoLLM Dashboard](https://github.com/CrashxZ/AutoLLM)** — CARLA AI-in-the-loop control plane with FastAPI + React, WebRTC telemetry, and dataset capture.  
+- **[MINDCAV AutoLLM Dashboard](https://github.com/CrashxZ/AutoLLM)** — CARLA AI-in-the-loop control plane and multi-vehicle interaction simulator with FastAPI + React, telemetry, and dataset capture.  
   
 - **[5G RAN Dashboard (srsRAN + OAI)](https://github.com/CrashxZ/UniDash5g)** — Unified 5G RAN telemetry dashboard with real-time UE views, shared schema, and a Vercel-hosted ingest API.  
 
